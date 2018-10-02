@@ -1,0 +1,108 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+    <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+    <script type="text/javascript" src="ExpClin.js"></script>
+    <body>
+      
+        <div class="tab">
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                <button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button>
+                <button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button>
+                <button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button>
+                <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
+                <button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button>
+                <button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button>
+                <button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button>
+                <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+        </div>
+    <form>
+        <div class="w3-container w3-card-4">
+                <div class="w3-row-padding">
+
+                   <br><div class="w3-third">
+                        <label>Padre</label>
+                    </div>
+
+                    <div class="w3-third">
+                        <input class="w3-radio" type="radio" name="Grupo1" value="Vivo" required="Requerido"/>
+                        <label>Vivo</label> 
+                    </div>
+
+                    <div class="w3-third">
+                        <input class="w3-radio" type="radio" name="Grupo1" value="Finado" required="Requerido"/>
+                        <label>Finado</label>
+                    </div>
+                    <label>Enfermedades que padece</label>
+                    <input class="w3-input" type="text">
+                </div><!--Padre-->
+        
+                <div class="w3-row-padding">
+
+                       <br> <div class="w3-third">
+                            <label>Madre</label>
+                        </div>
+    
+                        <div class="w3-third">
+                            <input class="w3-radio " type="radio" name="Grupo2" value="Vivo" required="Requerido"/>
+                            <label>Vivo</label> 
+                        </div>
+    
+                        <div class="w3-third">
+                            <input class="w3-radio " type="radio" name="Grupo2" value="Finado" required="Requerido"/>
+                            <label>Finado</label>
+                        </div>
+                        <label>Enfermedades que padece</label>
+                        <input class="w3-input" type="text">
+                    </div><!--Madre-->
+                
+
+                    <br><div class="w3-row-padding">
+
+                            <div class="w3-third">
+                                <label>Hermano(s)</label>
+                                <input type="number" id="NHermanos" name="NHermanos"  required="Requerido" min="0" max="10" placeholder="0"/>
+                            </div>
+        
+                            <div class="w3-third">
+                                <input class="w3-radio" type="radio" name="Grupo3" value="Vivo" required="Requerido"/>
+                                <label>Vivo</label> 
+                            </div>
+        
+                            <div class="w3-third">
+                                <input class="w3-radio" type="radio" name="Grupo3" value="Finado" required="Requerido"/>
+                                <label>Finado</label>
+                            </div>
+                            <label>Enfermedad(es) que padece(n)</label>
+                            <input class="w3-input" type="text">
+                        </div><!--Hermanos-->
+
+                        <br><div class="w3-row-padding">
+
+                                <div class="w3-third">
+                                    <label>Conyugue</label>
+                                </div>
+            
+                                <div class="w3-third">
+                                    <input class="w3-radio" type="radio" name="Popcional" value="Vivo" required="Requerido"/>
+                                    <label>Vivo</label> 
+                                </div>
+            
+                                <div class="w3-third">
+                                    <input class="w3-radio" type="radio" name="Popcional" value="Finado" required="Requerido"/>
+                                    <label>Finado</label>
+                                </div>
+                                <label>Enfermedades que padece</label>
+                                <input class="w3-input" type="text">
+                            </div><!--Conyugue-->
+                            <br>
+                            <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                            <br>
+                            <p></p>
+        </div><!--Contenedor--> 
+        </form>
+    </body>
+</html>
+

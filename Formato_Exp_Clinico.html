@@ -1,0 +1,198 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="ExpClin.js"></script>
+
+</head>
+  <body>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button>
+    <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+    <button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button>
+    <button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button>
+    <button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button>
+    <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
+    <button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button>
+    <button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button>
+    <button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button>
+    <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+  </div>
+
+  <!--Contenido de cada pestaña-->
+
+  <div id="DatosP" class="tabcontent">
+      
+    <div class="w3-row w3-container">
+      <div class="w3-col s6 w3-center">
+        <form>
+        <div class="w3-row-padding">
+
+            <div class="w3-third">
+              <label>Nombre</label> <input class="w3-input w3-border" type="text" required="Requerido"/>
+            </div>
+
+            <div class="w3-third">
+                <label>Apellido Paterno</label>
+                <input class="w3-input w3-border" type="text" required="Requerido"/>
+              </div>
+            
+            <div class="w3-third">
+              <label>Apellido Materno</label> <input class="w3-input w3-border" type="text" required="Requerido"/>
+            </div>
+        </div><!--Nombre-->
+
+       <br> <div class="w3-row-padding">
+        
+        <div class="w3-third">
+            <label>Fecha de Nacimiento</label> <input class="w3-input w3-border" type="date" required="Requerido" style="text-align:center" />
+           </div>
+
+          <div class="w3-third">
+              <label>Lugar de Nacimiento</label>
+              <input class="w3-input w3-border" type="text" required="Requerido"/>
+            </div>
+
+            <div class="w3-third">
+                <label>Edad</label>
+                <input type="number" id="Edad" name="Edad"  required="Requerido" min="18" max="70" placeholder="18"/>
+            </div>
+       
+        </div><!--Nacer-->
+
+        <br><div class="w3-row-padding">
+     
+              <div class="w3-third">
+                  <label>Tipo de Sangre</label>
+                  <select id="TSangre" name="TSangre" required="requerido">
+                      <option value="">--</option>
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                      </select>
+              </div>
+                      
+              <div class="w3-third">
+                    <label for="Sexo">Sexo</label>
+                    <select id="Sexo" name="Sexo" required="requerido">
+                      <option value="">--</option>
+                      <option value="Fem">Femenino</option>
+                      <option value="Mas">Masculino</option>
+                      </select>
+                </div>
+
+
+            <div class="w3-third">
+                <label for="EdoCivil">Edo.Civil</label>
+                <select id="EdoCivil" name="EdoCivil" required="requerido">
+                  <option value="">--</option>
+                  <option value="Casado">Casado</option>
+                  <option value="Soltero">Soltero</option>
+                  <option value="Viudo">Viudo</option>
+                  <option value="Divorciado">Divorciado</option>
+                  </select>
+            </div>
+        </div><!--Sexo-->
+
+        <br> <div class="w3-row-padding">
+        
+            <div class="w3-third">
+                <label>Dirección</label> 
+                <input class="w3-input w3-border" type="text" required="Requerido"/>
+               </div>
+    
+              <div class="w3-third">
+                  <label>Colonia</label>
+                  <input class="w3-input w3-border" type="text" required="Requerido"/>
+                </div>
+                
+                <div class="w3-third">
+                    <label>Ciudad</label>
+                    <input class="w3-input w3-border" type="text"  required="Requerido"/>
+                </div>
+           
+            </div><!--Dirección-->
+
+            <br> <div class="w3-row-padding">
+        
+                <div class="w3-third">
+                    <label>Teléfono</label> 
+                    <input class="w3-input w3-border" type="tel" required="Requerido" min="8" max="20"/>
+                   </div>
+
+                   <div class="w3-third">
+                   <label>Celular</label> 
+                    <input class="w3-input w3-border" type="tel" required="Requerido" min="8" max="20"/>
+                   </div>
+        
+                  <div class="w3-third">
+                      <label>Correo Electrónico</label>
+                      <input class="w3-input w3-border" type="email"/>
+                    </div>
+             </div><!--Contacto-->
+
+             <br> <div class="w3-row-padding">
+        
+                <div class="w3-third">
+                    <label>Puesto Solicitado</label> 
+                    <input class="w3-input w3-border" type="text" required="Requerido"/>
+                </div>
+
+                <div class="w3-third">
+                   <label>Departamento</label> 
+                   <input class="w3-input w3-border" type="text" required="Requerido"/>
+                </div>
+        
+                <div class="w3-third">
+                    <label>Área</label>
+                    <input class="w3-input w3-border" type="text" required="Requerido"/>
+                  </div>
+             </div><!--Empresa-->
+
+             <br> <div class="w3-row-padding">
+        
+                <div class="w3-third">
+                   <label>Clave de la Empresa</label> 
+                   <input class="w3-input w3-border" type="number" required="Requerido" min="2" max="6"/>
+                </div>
+        
+                <div class="w3-half">
+                    <label>Nombre Comercial de la empresa</label>
+                    <input class="w3-input w3-border" type="text" required="Requerido"/>
+                  </div>
+             </div><!--Empresa2-->
+
+      <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button> 
+
+        </form>
+      </div> <!--Cierre columna Derecha-->
+
+      <!--FOTOO-->
+      <div class="w3-col s6 w3-center">
+        <div class="FotoContenedor">
+            <video id="video" width="380" height="300"></video>
+        </div>
+
+        <button class="form-btn Foto" id="Capture" onclick="FunctionTomar()">
+            <i class="material-icons">party_mode</i></button>
+          <canvas id="canvas" width="400" height="300"></canvas>
+          <br><img id="photo" src="" alt="">
+        </div><!--FOTOS-->
+
+
+    </div><!--Cierre contenedor-->
+
+  </div>
+
+  
+  </body>
+</html>
