@@ -1,6 +1,5 @@
 .btn-submit{
-    position: absolute;
-    bottom: 0;
-    left: 85%;
+    position: relative;
+    left: 80%;
     right: 0;
 }

@@ -7,9 +7,9 @@
     <body>
       
         <div class="tab">
-                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" selected onclick="openTab(event, 'DatosP')" id="defaultOpen">Datos Personales</button></a>
                 <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
-                <button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button>
+                <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
                 <button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button>
                 <button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button>
                 <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
@@ -96,11 +96,14 @@
                                 </div>
                                 <label>Enfermedades que padece</label>
                                 <input class="w3-input" type="text">
+                                <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                                <p>
                             </div><!--Conyugue-->
-                            <br>
-                            <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
-                            <br>
-                            <p></p>
+
+                          
+                                   
+                                   
+                            
         </div><!--Contenedor--> 
         </form>
     </body>
