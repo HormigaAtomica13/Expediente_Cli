@@ -1,0 +1,134 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+    <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+    <script type="text/javascript" src="ExpClin.js"></script>
+    <body>
+      
+        <div class="tab">
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
+                <a href="AntPat.html"><button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button></a>
+                <button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button>
+                <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
+                <button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button>
+                <button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button>
+                <button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button>
+                <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+        </div>
+    <form>
+        <div class="w3-container w3-card-4">
+
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo1" value="Asma" required="Requerido"/>
+                                <label>Asma</label>
+                         </div>
+                <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo2" value="Alergias" required="required">        
+                                <label>Alergias</label>                            
+                </div>            
+                    </div>
+                
+                
+                
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo3" value="Hipertension" required="required">        
+                                <label>Hipertensión</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo18" value="Neumocosis" required="required">        
+                                <label>Neumocosis</label>                            
+                        </div>
+                </div>        
+    
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo4" value="Hernias" required="required">        
+                                <label>Hernias</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grup17" value="Fracturas" required="required">        
+                                <label>Fracturas</label>                            
+                        </div>
+                </div>        
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo5" value="Cardiopatias" required="required">        
+                                <label>Cardiopatías</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo16" value="Lumbalgia" required="required">        
+                                <label>Lumbalgias</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo6" value="Cirugia" required="required">        
+                                <label>Cirugía</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo15" value="Neoplasticos" required="required">        
+                                <label>Neoplásticos</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo7" value="Diabetes" required="required">        
+                                <label>Diabetes</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo14" value="Neumopatias" required="required">        
+                                <label>Neumopatías</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo8" value="Epilepsia" required="required">        
+                                <label>Epilepsia</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo13" value="Reumaticos" required="required">        
+                                <label>Reumáticos</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo9" value="Fimicos" required="required">        
+                                <label>Fimicos</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo12" value="Tifoidea" required="required">        
+                                <label>Tifoidea</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo10" value="Hepatitis" required="required">        
+                                <label>Hepatitis</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo11" value="Venereas" required="required">        
+                                <label>Venereas</label>                            
+                        </div>
+                </div> 
+               <br> <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <label>Otros</label>
+                                <input class="w3-input" type="text">
+                         </div>
+                        <div class="w3-third">
+                                <label>Observaciones patológicas</label>
+                                <input class="w3-input" type="text">
+                         </div>
+            </div>
+                            <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                            <p></p>
+        </div> 
+        </form>
+    </body>
+</html>
+
