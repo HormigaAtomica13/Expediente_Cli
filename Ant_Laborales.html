@@ -1,0 +1,220 @@
+<html>
+    <head>
+        <script type="text/javascript" src="Ant_Laborales.js"></script>
+        <!-- Bootstrap css library -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap js library -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+        <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+        <script type="text/javascript" src="ExpClin.js"></script>    
+    </head>
+
+    <body>
+            <div class="tab">
+                    <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                    <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                    <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
+                    <a href="AntPat.html"><button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button></a>
+                    <a href="IGineObst.html"><button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button></a>
+                    <a href="Ant_Laborales.html"><button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button></a>
+                    <button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button>
+                    <button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button>
+                    <button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button>
+                    <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+            </div>
+  
+            <div class="panel panel-default">
+              
+              <div class="panel-body">
+              
+              <div id="Campos_Laborales">
+                      
+                </div>
+
+                <div class="w3-container w3-card-4">
+
+                       <br> <div class="w3-row-padding">
+      
+                                <div class="w3-third">
+                                        <label>Nombre de la empresa</label>
+                                        <input class="w3-input" type="text">
+                                </div>
+                
+                                <div class="w3-third">
+                                      <label>Tiempo laborado</label>
+                                      <input class="w3-input" type="text">
+                                                                                            
+                                </div>
+                                                                           
+                                <div class="w3-third">
+                                        <label>Puesto</label>
+                                        <input class="w3-input" type="text">
+                                </div>
+        
+                        </div>
+
+                        <br><div class="w3-row-padding">
+                              <div class="w3-third">
+                                       <label>Químico-<br>Tóxico &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                                       <label>Si</label>
+                                       <input class="w3-radio" type="radio" name="Grupo1" value="Si" required="Requerido"/>
+                                       <label>No</label>
+                                       <input class="w3-radio" type="radio" name="Grupo1" value="No" required="Requerido"/>
+                               </div>
+      
+                              <div class="w3-third">
+                                      <label>Frecuencia</label>
+                                      <input class="w3-input" type="text">
+                              </div>
+      
+                              <div class="w3-third">
+                                      <label>Uso de EPP &nbsp</label> 
+                                      <label>Si</label>
+                                      <input class="w3-radio " type="radio" name="Grupo12" value="Si" required="Requerido"/>
+                                      <label>No</label>
+                                      <input class="w3-radio " type="radio" name="Grupo12" value="No" required="Requerido"/>
+
+                              </div>
+                      </div>
+                  
+                      <div class="w3-row-padding">
+      
+                              <div class="w3-third">
+                                      <label>Ruido <br> intenso &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label> 
+                                      <label>Si</label>
+                                      <input class="w3-radio " type="radio" name="Grupo2" value="Si" required="Requerido"/>
+                                      <label>No</label>
+                                      <input class="w3-radio " type="radio" name="Grupo2" value="No" required="Requerido"/>
+                              </div>
+                              
+                              <div class="w3-third">
+                                      <label>Frecuencia</label>
+                                      <input class="w3-input" type="text">
+                              </div>
+                              <div class="w3-third">
+                                      <label>Uso de EPP &nbsp</label>
+                                      <label>Si</label>
+                                      <input class="w3-radio " type="radio" name="Grupo21" value="Si" required="Requerido"/>
+                                      <label>No</label>
+                                      <input class="w3-radio " type="radio" name="Grupo21" value="No" required="Requerido"/>
+
+                                      
+                               </div>
+                      </div>
+                      
+                      <div class="w3-row-padding">
+      
+                              <div class="w3-third">
+                                      <label>Accidentes<br> laborales &nbsp&nbsp&nbsp</label>
+                                      <label>Si</label>
+                                      <input class="w3-radio" type="radio" name="Grupo3" value="Si" required="Requerido"/>                                
+                                      <label>No</label>
+                                      <input class="w3-radio" type="radio" name="Grupo3" value="No" required="Requerido"/>                                
+      
+                              </div>
+              
+                              <div class="w3-third">
+                                    <label>Motivo</label>
+                                    <input class="w3-input" type="text">
+                                                                                          
+                              </div>
+                                                                         
+                              <div class="w3-third">
+                                      <label>Lugar de la lesión</label>
+                                      <input class="w3-input" type="text">
+                              </div>
+      
+                      </div>
+      
+                      <div class="w3-row-padding">
+                             
+                              <div class="w3-third">
+                                      <label>Secuelas &nbsp&nbsp&nbsp</label> 
+                                      <label>Si</label>
+                                      <input class="w3-radio" type="radio" name="Grupo4" value="Si" required="Requerido"/>
+                                      <label>No</label>
+                                      <input class="w3-radio" type="radio" name="Grupo4" value="No" required="Requerido"/>
+                              </div>   
+                              <div class="w3-third">
+                                    <label>¿Cuáles?</label>
+                                    <input class="w3-input" type="text">
+                            </div>
+                                                              
+                      </div>
+      
+                  <div class="input-group-btn">
+                    <button class="btn btn-success" type="button"  onclick="Campos_Laborales();"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </button>
+                  </div>
+                  
+                    </div> 
+                
+              
+            <div class="clear"></div>
+
+            <br><div class="w3-row-padding">
+      
+                    <div class="w3-third">
+                            <label>Exam. No <br> Aceptable &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                            <label>Si</label>
+                            <input class="w3-radio" type="radio" name="Grupo5" value="Si" required="Requerido"/>                                
+                            <label>No</label>
+                            <input class="w3-radio" type="radio" name="Grupo5" value="No" required="Requerido"/>                                
+
+                    </div>
+    
+                    <div class="w3-third">
+                          <label>Motivo</label>
+                          <input class="w3-input" type="text">
+                                                                                
+                    </div>                  
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <label>Abandono de<br> trabajo por<br> problemas<br> de salud &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                    <label>Si</label>
+                    <input class="w3-radio" type="radio" name="Grupo6" value="Si" required="Requerido"/>                                
+                    <label>No</label>
+                    <input class="w3-radio" type="radio" name="Grupo6" value="No" required="Requerido"/>                                
+                </div>
+                <div class="w3-third">
+                    <br><label>Motivo</label>
+                    <input class="w3-input" type="text">
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                    <div class="w3-third">
+                        <label>Incapacidad<br> frecuente &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <label>Si</label>
+                        <input class="w3-radio" type="radio" name="Grupo7" value="Si" required="Requerido"/>                                
+                        <label>No</label>
+                        <input class="w3-radio" type="radio" name="Grupo7" value="No" required="Requerido"/>                                
+                    </div>
+                    
+                </div>
+            <div class="w3-row-padding">
+                    <div class="w3-third">
+                        <label>Incapacidad<br>prolongada &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                        <label>Si</label>
+                        <input class="w3-radio" type="radio" name="Grupo8" value="Si" required="Requerido"/>                                
+                        <label>No</label>
+                        <input class="w3-radio" type="radio" name="Grupo8" value="No" required="Requerido"/>                                
+                    </div>
+                    
+                </div>
+
+            <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                       <p></p>
+
+        </div>
+    </div>
+
+    </body>
+</html>
+
