@@ -1,0 +1,112 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+    <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+    <script type="text/javascript" src="ExpClin.js"></script>
+    <body>
+      
+        <div class="tab">
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
+                <a href="AntPat.html"><button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button></a>
+                <a href="IGineObst.html"><button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button></a>
+                <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
+                <a href="PadAct.html"><button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button></a>        
+                <a href="ExpFisSV.html"><button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button></a>
+                <a href="IntPorApySis.html"><button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button></a>                
+                <a href="ExpAgVi.html"><button class="tablinks" onclick="openTab(event, 'ExpAgVi')">Exploración Agudeza Visual</button></a>
+                <a href="ExpFisTx.html"><button class="tablinks" onclick="openTab(event, 'Observaciones')">Exploración física Tx</button></a>
+                <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+        </div>
+    <form>
+        <div class="w3-container w3-card-4">
+
+                  <br><div class="w3-row-padding">
+
+                        <div class="w3-third">
+                                <label>VC Ambos Ojos</label>
+                                <input class="w3-input" type="text">
+                        </div>
+
+                        <div class="w3-third">
+                                <label>VC Ojo Derecho</label> 
+                                <input class="w3-input" type="text">
+                                <label>VC Ojo Izquierdo</label>
+                                <input class="w3-input" type="text">
+                        </div>
+
+                </div>
+            
+                <div class="w3-row-padding">
+
+                        <div class="w3-third">
+                                <label>VL Ambos Ojos</label>
+                                <input class="w3-input" type="text">
+                        </div>
+                        <div class="w3-third">
+                                <label>VL Ojos Derecho</label>
+                                <input class="w3-input" type="text">
+                                <label>VL Ojos Izquierdo</label>
+                                <input class="w3-input" type="text">
+                         </div>
+                </div>
+                
+                <div class="w3-row-padding">
+
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo31" value="Marihuana" />
+                                <label>Corregida</label> 
+                                <input class="w3-radio" type="checkbox" name="Grupo32" value="Cocaina" />
+                                <label>Daltonismo</label>
+                        </div>                                                                
+
+                </div>
+                <hr>
+                <div class="w3-row-padding">
+                       
+                    <div class="w3-third">
+                        <label>Capimetría O-D</label>
+                        <input class="w3-input" type="text">
+                        <label>Capimetría O-I</label>
+                        <input class="w3-input" type="text">
+                </div>
+
+                <div class="w3-third">
+                        <label>Pterigion O-D</label> 
+                        <input class="w3-input" type="text">
+                        <label>Pterigion O-I</label>
+                        <input class="w3-input" type="text">
+                </div>                    
+                </div>
+                
+                
+               
+              
+
+               <br> <div class="w3-row-padding">    
+                        <div class="w3-third">
+                                <label>Fondo de Ojo</label>
+                                <input class="w3-input" type="text">
+                        </div>
+                </div>
+
+
+
+
+                
+                   <br> <div class="w3-row-padding">
+                            <div class="w3-third">
+                                    <label>Observaciones</label>
+                                    <input class="w3-input w3-border" type="text" required="Requerido"/>
+                                </div>
+                </div>        
+            <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                 <p></p>
+        </div>
+                            
+        </div> 
+        </form>
+    </body>
+</html>

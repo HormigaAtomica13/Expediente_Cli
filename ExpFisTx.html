@@ -1,0 +1,206 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+    <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+    <script type="text/javascript" src="ExpClin.js"></script>
+    <body>
+      
+        <div class="tab">
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
+                <a href="AntPat.html"><button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button></a>
+                <a href="IGineObst.html"><button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button></a>
+                <button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button>
+                <a href="PadAct.html"><button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button></a> 
+                <a href="ExpFisSV.html"><button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button></a> 
+                <a href="IntPorApySis.html"><button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button></a>
+                <a href="ExpAgVi.html"><button class="tablinks" onclick="openTab(event, 'ExpAgVi')">Exploración Agudeza Visual</button></a>
+                <a href="ExpFisTx.html"><button class="tablinks" onclick="openTab(event, 'Observaciones')">Exploración física Tx</button></a>
+                <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+        </div>
+    <form>
+        <div class="w3-container w3-card-4">
+            
+            <br><div class="w3-row-padding">
+            
+                    <div class="w3-third">
+                            <label>Campos Pulmonares &nbsp&nbsp&nbsp</label>
+                            <label>Si</label>
+                            <input class="w3-radio" type="radio" name="Grupo1" value="Si" required="Requerido"/>                                
+                            <label>No</label>
+                            <input class="w3-radio" type="radio" name="Grupo1" value="No" required="Requerido"/>                                
+
+                    </div>
+    
+                    <div class="w3-third">
+                            <label>Quistes &nbsp&nbsp&nbsp</label>
+                            <input class="w3-radio" type="radio" name="Grupo2" value="Si" required="Requerido" />
+                            <label>Si</label> 
+                            <input class="w3-radio" type="radio" name="Grupo2" value="No" required="Requerido"/>
+                            <label>No</label>                          
+                    </div>                            
+        </div>
+        <br><div class="w3-row-padding">
+            
+                <div class="w3-third">
+                        <label>Ruidos Cardiacos &nbsp&nbsp&nbsp</label>
+                        <label>Si</label>
+                        <input class="w3-radio" type="radio" name="Grupo3" value="Si" required="Requerido"/>                                
+                        <label>No</label>
+                        <input class="w3-radio" type="radio" name="Grupo3" value="No" required="Requerido"/>                                
+
+                </div>
+
+                <div class="w3-third">
+                        <label>Varicocele &nbsp&nbsp&nbsp</label>
+                        <input class="w3-radio" type="radio" name="Grupo4" value="Si" required="Requerido" />
+                        <label>Si</label> 
+                        <input class="w3-radio" type="radio" name="Grupo4" value="No" required="Requerido"/>
+                        <label>No</label>                          
+                </div>                            
+    </div>
+    <br><div class="w3-row-padding">
+            
+            <div class="w3-third">
+                    <label>Glandulas Mamarias &nbsp&nbsp&nbsp</label>
+                    <label>Si</label>
+                    <input class="w3-radio" type="radio" name="Grupo5" value="Si" required="Requerido"/>                                
+                    <label>No</label>
+                    <input class="w3-radio" type="radio" name="Grupo5" value="No" required="Requerido"/>                                
+
+            </div>
+
+            <div class="w3-third">
+                    <label>Columna Vertebral &nbsp&nbsp&nbsp</label>
+                    <input class="w3-radio" type="radio" name="Grupo6" value="Si" required="Requerido" />
+                    <label>Si</label> 
+                    <input class="w3-radio" type="radio" name="Grupo6" value="No" required="Requerido"/>
+                    <label>No</label>                          
+            </div>                            
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Pared Abdominal &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo7" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo7" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Miembros Superiores &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo8" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo8" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                                    
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Hombros Dolorosos &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo9" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo9" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Hallus Valgus &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo10" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo10" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                            
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Puntos Dolorosos &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo11" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo11" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Pie Plano &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo12" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo12" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                            
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Hernias Umbilicales &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo13" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo13" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Varices &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo14" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo14" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                            
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Área Renal &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo15" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo15" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Tatuajes &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo16" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo16" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                            
+</div>
+<br><div class="w3-row-padding">
+            
+        <div class="w3-third">
+                <label>Anillos Inguinales &nbsp&nbsp&nbsp</label>
+                <label>Si</label>
+                <input class="w3-radio" type="radio" name="Grupo17" value="Si" required="Requerido"/>                                
+                <label>No</label>
+                <input class="w3-radio" type="radio" name="Grupo17" value="No" required="Requerido"/>                                
+
+        </div>
+
+        <div class="w3-third">
+                <label>Marcha &nbsp&nbsp&nbsp</label>
+                <input class="w3-radio" type="radio" name="Grupo18" value="Si" required="Requerido" />
+                <label>Si</label> 
+                <input class="w3-radio" type="radio" name="Grupo18" value="No" required="Requerido"/>
+                <label>No</label>                          
+        </div>                            
+</div>
+<br><div class="w3-container">                       
+        <label>Exploración Patológica</label>
+        <input class="w3-input w3-border" type="text" required="Requerido"/>
+</div>
+<br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+     <p></p>            
+</div>        
+        </form>
+    </body>
+</html>
