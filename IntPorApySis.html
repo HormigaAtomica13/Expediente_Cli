@@ -1,0 +1,101 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="Formato_Exp_Clinico.css">
+    <link rel="stylesheet" type="text/css" href="AntHerFam.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="ExpClin.js"></script>
+    <body>
+      
+        <div class="tab">
+                <a href="Formato_Exp_Clinico.html"><button class="tablinks" onclick="openTab(event, 'DatosP')">Datos Personales</button></a>
+                <a href="AntHerFam.html"><button class="tablinks" onclick="openTab(event, 'AntHF')">Ant. Heredo Familiares</button></a> 
+                <a href="AntNoPat.html"><button class="tablinks" onclick="openTab(event, 'AntNP')">Ant. No Patológicos</button></a>
+                <a href="AntPat.html"><button class="tablinks" onclick="openTab(event, 'AntPP')">Ant. Personales Patológicos</button></a>
+                <a href="IGineObst.html"><button class="tablinks" onclick="openTab(event, 'AntGOBST')">Ant. Ginecobstétricos</button></a>
+                <a href="Ant_Laborales.html"><button class="tablinks" onclick="openTab(event, 'AntL')">Ant. Laborales</button></a>
+                <a href="PadAct.html"><button class="tablinks" onclick="openTab(event, 'PadActual')">Padecimiento Actual</button></a> 
+                <a href="ExpFisSV.html"><button class="tablinks" onclick="openTab(event, 'ExpFisica')">Exploración Física</button></a>                 <a href="IntPorApySis.html"><button class="tablinks" onclick="openTab(event, 'IntApSis')">Int.Por Aparatos y Sistemas</button></a>
+                <a href="ExpAgVi.html"><button class="tablinks" onclick="openTab(event, 'ExpAgVi')">Exploración Agudeza Visual</button></a>
+                <a href="ExpFisTx.html"><button class="tablinks" onclick="openTab(event, 'Observaciones')">Exploración física Tx</button></a>
+                <button class="tablinks" onclick="openTab(event, 'Observaciones')">Observaciones</button>
+        </div>
+    <form>
+        <div class="w3-container w3-card-4">
+
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo1" value="Respiratorio" />
+                                <label>Respiratorio</label>
+                         </div>
+                <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo2" value="Psiquiatrico" >        
+                                <label>Psiquiatrico</label>                            
+                </div>            
+                    </div>
+                                        
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo3" value="Hipertension" >        
+                                <label>Digestivo</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo18" value="Neumocosis" >        
+                                <label>Esqueletico</label>                            
+                        </div>
+                </div>        
+    
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo4" value="Cardiovascular" >        
+                                <label>Cardiovascular</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grup17" value="Audicion" >        
+                                <label>Audición</label>                            
+                        </div>
+                </div>        
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo5" value="Nervioso" >        
+                                <label>Nervioso</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo16" value="Vision">        
+                                <label>Visión</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo6" value="Urinario" >        
+                                <label>Urinario</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo15" value="Olfato" >        
+                                <label>Olfato</label>                            
+                        </div>
+                </div> 
+                <div class="w3-row-padding">
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo7" value="Endoctrino" >        
+                                <label>Endoctrino</label>                            
+                        </div>
+                        <div class="w3-third">
+                                <input class="w3-radio" type="checkbox" name="Grupo14" value="Tacto" >        
+                                <label>Tacto</label>                            
+                        </div>
+                        <hr>
+                        <br><div class="w3-third">
+                            <label>Observaciones Patológicas</label>
+                            <input class="w3-input w3-border" type="text" required="Requerido"/>
+                        </div>
+                 </div>
+                 <br><button type="submit" id="submit" name="submit" class="btn-submit">Guardar</button>
+                            <p></p>
+            </div>
+                            
+        </div> 
+        </form>
+    </body>
+</html>
+
